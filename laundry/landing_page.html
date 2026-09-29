@@ -1,0 +1,635 @@
+<html>
+<head>
+
+    <title>Sistem Informasi Laundry</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f9ff;
+        }
+
+        /* NAVBAR */
+
+        .navbar-custom {
+            background: #ffffff;
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 0;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #5489ec;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar-custom .navbar-nav > li > a {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar-custom .navbar-nav > li > a:hover {
+            color: #5489ec;
+            background: transparent;
+        }
+
+        /* HOME */
+
+        .home {
+            min-height: 650px;
+            background: linear-gradient(135deg, #0a2966ff, #76a5ff);
+            color: white;
+            padding-top: 160px;
+        }
+
+        .home h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .home p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .btn-login {
+            background: white;
+            color: #5489ec;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .btn-login:hover {
+            background: #eeeeee;
+            color: #5489ec;
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section h2 {
+            color: #5489ec;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .box .glyphicon {
+            font-size: 40px;
+            color: #5489ec;
+            margin-bottom: 20px;
+        }
+
+        /* HARGA */
+
+        .harga {
+            background: #f0f4fa;
+        }
+
+        /* KONTAK */
+
+        .kontak {
+            background: #5489ec;
+            color: white;
+        }
+
+        .kontak h2 {
+            color: white;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* LOGIN MODAL */
+
+        .modal-header {
+            background: #5489ec;
+            color: white;
+            text-align: center;
+        }
+
+        .modal-header .close {
+            color: white;
+            opacity: 1;
+        }
+
+        .login-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-custom navbar-fixed-top">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#menu">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="#home">
+                LAUNDRY
+            </a>
+
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#tentang">Tentang</a>
+                </li>
+
+                <li>
+                    <a href="#layanan">Layanan</a>
+                </li>
+
+                <li>
+                    <a href="#harga">Harga</a>
+                </li>
+
+                <li>
+                    <a href="#kontak">Kontak</a>
+                </li>
+
+                <!-- LOGIN -->
+
+                <li>
+                <a href="login.php">
+                <span class="glyphicon glyphicon-log-in"></span>
+                 Login
+                  </a>
+              </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+  
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="home">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-7">
+
+                <h1>
+                    Laundry Bersih,<br>
+                    Wangi & Terpercaya
+                </h1>
+
+                <p>
+                    Selamat datang di Sistem Informasi Laundry.
+                    Kelola data pelanggan, transaksi dan laporan
+                    laundry dengan mudah.
+                </p>
+
+                <a href="#layanan"
+                   class="btn btn-login">
+
+                    Lihat Layanan
+
+                </a>
+
+            </div>
+
+
+            <div class="col-md-5 text-center">
+
+                <span class="glyphicon glyphicon-tint"
+                      style="font-size:180px;margin-top:50px;">
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TENTANG ================= -->
+
+<section id="tentang" class="section">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2>Tentang Kami</h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h3>Sistem Informasi Laundry</h3>
+
+                <p>
+                    Sistem Informasi Laundry digunakan untuk
+                    membantu pengelolaan usaha laundry agar
+                    lebih mudah dan terorganisir.
+                </p>
+
+                <p>
+                    Admin dapat mengelola pelanggan, transaksi,
+                    laporan, harga dan pengaturan sistem.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="box">
+
+                    <span class="glyphicon glyphicon-ok"></span>
+
+                    <h3>Bersih</h3>
+
+                    <p>
+                        Pakaian dicuci dengan proses yang baik.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LAYANAN ================= -->
+
+<section id="layanan" class="section harga">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2>Layanan Kami</h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="box">
+
+                    <span class="glyphicon glyphicon-tint"></span>
+
+                    <h3>Cuci Kering</h3>
+
+                    <p>
+                        Pakaian dicuci dan dikeringkan
+                        dengan bersih.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="box">
+
+                    <span class="glyphicon glyphicon-star"></span>
+
+                    <h3>Cuci & Setrika</h3>
+
+                    <p>
+                        Pakaian dicuci, dikeringkan
+                        dan disetrika hingga rapi.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="box">
+
+                    <span class="glyphicon glyphicon-time"></span>
+
+                    <h3>Express</h3>
+
+                    <p>
+                        Layanan laundry cepat untuk
+                        kebutuhan mendesak.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HARGA ================= -->
+
+<section id="harga" class="section">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2>Harga Laundry</h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="box">
+
+                    <h3>Cuci Kering</h3>
+
+                    <h2>Rp 7.000 / Kg</h2>
+
+                    <p>
+                        Laundry cuci kering.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="box">
+
+                    <h3>Cuci Setrika</h3>
+
+                    <h2>Rp 10.000 / Kg</h2>
+
+                    <p>
+                        Laundry cuci dan setrika.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="box">
+
+                    <h3>Express</h3>
+
+                    <h2>Rp 15.000 / Kg</h2>
+
+                    <p>
+                        Laundry express.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= KONTAK ================= -->
+
+<section id="kontak" class="section kontak">
+
+    <div class="container text-center">
+
+        <h2>Hubungi Kami</h2>
+
+        <p>
+            Butuh layanan laundry?
+            Percayakan pakaian Anda kepada kami.
+        </p>
+
+        <br>
+
+        <a href="login.php">
+        <span class="glyphicon glyphicon-log-in"></span>
+         Login Admin
+       </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Sistem Informasi Laundry
+    </p>
+
+</footer>
+
+
+<!-- ================================================= -->
+<!-- LOGIN MODAL                                      -->
+<!-- KODE LOGIN ASLI TETAP MENGGUNAKAN login.php      -->
+<!-- ================================================= -->
+
+<div class="modal fade"
+     id="loginModal"
+     tabindex="-1"
+     role="dialog">
+
+    <div class="modal-dialog"
+         role="document">
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+                <button type="button"
+                        class="close"
+                        data-dismiss="modal">
+
+                    &times;
+
+                </button>
+
+                <span class="glyphicon glyphicon-lock login-icon"></span>
+
+                <h4 class="modal-title">
+                    Login Sistem Laundry
+                </h4>
+
+            </div>
+
+
+            <!-- FORM ASLI TETAP -->
+
+            <form action="login.php" method="post">
+
+                <div class="modal-body">
+
+
+                    <?php
+
+                    if (isset($_GET['pesan'])) {
+
+                        if ($_GET['pesan'] == 'gagal') {
+
+                            echo "<div class='alert alert-danger'>
+                            Login gagal! Username atau Password Salah!
+                            </div>";
+
+                        } elseif ($_GET['pesan'] == 'logout') {
+
+                            echo "<div class='alert alert-info'>
+                            Anda telah berhasil Logout!
+                            </div>";
+
+                        } elseif ($_GET['pesan'] == 'belum login') {
+
+                            echo "<div class='alert alert-danger'>
+                            Anda harus login untuk mengakses halaman admin!
+                            </div>";
+
+                        }
+
+                    }
+
+                    ?>
+
+
+                    <div class="form-group">
+
+                        <label>Username</label>
+
+                        <input type="text"
+                               name="username"
+                               class="form-control"
+                               placeholder="Masukkan Username">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Password</label>
+
+                        <input type="password"
+                               name="password"
+                               class="form-control"
+                               placeholder="Masukkan Password">
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn btn-default"
+                            data-dismiss="modal">
+
+                        Batal
+
+                    </button>
+
+
+                    <input type="submit"
+                           class="btn btn-primary"
+                           value="Log In">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
